@@ -1,0 +1,13 @@
+.drag-list{
+    list-style: none;
+    padding: 0;
+}
+
+.drag-item{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+    border: 1px solid black;
+    border-radius: 10px;
+}
