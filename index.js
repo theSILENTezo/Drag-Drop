@@ -2,9 +2,9 @@ const dragList = document.getElementById('dragList');
 let draggedItem = null;
 
 /* Drag Events */
-    dragList.addEventListener('dragStart', handleDragStart);
-    dragList.addEventListener('dragOver', handleDragOver);
-    dragList.addEventListener('dragDrop', handleDrop);
+    dragList.addEventListener('dragstart', handleDragStart);
+    dragList.addEventListener('dragover', handleDragOver);
+    dragList.addEventListener('drop', handleDrop);
 
 //Drag Start Event Handler
     function handleDragStart(event){
@@ -52,3 +52,9 @@ let draggedItem = null;
         draggedItem.style.opacity = '';
         draggedItem = null;
     }
+
+//Toggle Button
+    const toggle = document.querySelector('.toggle');
+    toggle.addEventListener('click', () =>{
+        toggle.classList.toggle('on');
+    });

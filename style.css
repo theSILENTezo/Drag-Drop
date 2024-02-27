@@ -11,3 +11,34 @@
     border: 1px solid black;
     border-radius: 10px;
 }
+
+.toggle{
+    display: inline block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+    border-radius: 34px;
+    background-color: #cdd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: azure;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
+}
+
+.toggle.on{
+    background-color: blueviolet;
+}
+
+.toggle.on::before{
+    transform: translateX(26px);
+}
